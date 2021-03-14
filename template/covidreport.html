@@ -1,0 +1,26 @@
+
+{% extends "structure.html" %}
+{% load embed_video_tags %}
+{% block title %}Covid Status{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+        <div class="intro_content">
+                <table class="presentationTable">
+                        <tr>
+                                <td>
+                                        <p>San Diego Vaccination</p>
+                                        {% video 'https://youtu.be/70VsNM8pKYI' '600x400' %}
+                                </td>
+                                <td>
+                                        <p>You can find
+                                                <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html"
+                                                   target="_blank">here</a>,
+                                                some information about the different vaccines
+                                                that are available in the USA.</p>
+                                </td>
+                        </tr>
+                </table>
+                <p></p>
+                <br/>
+        </div>
+{% endblock %}

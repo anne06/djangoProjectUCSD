@@ -1,0 +1,16 @@
+{% extends "structure.html" %}
+{% block title %}Newsletter Registration{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+
+    <p>If you are interested in the topics of this website, please, feel free to register on our newsletter.</p>
+
+    <form action="newsletter" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+          <p>
+               <button id="submit" type="submit">Save</button>
+           </p>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,31 @@
+
+{% extends "structure.html" %}
+{% load static %}
+{% block title %}Presentation{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+        <div class="intro_content">
+
+                <h2>About me</h2>
+                <table class="presentationTable">
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/France_Regions.png' %}" alt="France"  />
+                                </td>
+                                <td>
+                                        I come from France, I used to leave in a village close to the Italian border.<br/>
+                                        It is the small blue dot in the South East of France.
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <img src="{% static 'img/cats.jpg' %}" alt="Cats"  />
+                                </td>
+                                <td>
+                                        I am a cat lover. We adopted those two brothers 3 months ago.<br/>
+                                        They come from a shelter that saves animals
+                                </td>
+                        </tr>
+                </table>
+        </div>
+{% endblock %}

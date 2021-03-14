@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header id="enTete">
+        <div id="centerLogo">
+            <img src="{% static 'img/logo_USCD.png' %}" alt="Project logo"  />
+        </div>
+        {% block header %}
+        {% endblock %}
+    </header>
+    <div>
+        <aside id="menu">
+            <ul>
+                <li><a href="introduction">Introduction</a></li>
+                <li><a href="presentation">Presentation</a></li>
+                <li><a href="covidreport">Covid Status</a></li>
+                <li><a href="newsletter">Newsletter</a></li>
+                <li id="secret"><a href="userinfo">(Secret Page)</a></li>
+            </ul>
+        </aside>
+        <section id="contenu">
+            <br />
+            <p>We are the {{ current_date_time }}</p>
+            <br />
+            {% block content %}
+
+            {% endblock %}
+        </section>
+    </div>
+    <footer id="footer">
+        <p>CSE-41315 - Mr Mathapathi - Python Web Frameworks - Django / Final Project  -  Anne Chatin</p>
+    </footer>
+</body>
+</html>

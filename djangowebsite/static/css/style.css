@@ -1,0 +1,217 @@
+html, body {
+     margin: 0; padding: 0;
+     /*color: #000333;*/
+    background-color: #d9d9d9;
+   height: 100%;
+   width: 100%;
+
+}
+
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+/********************************************************/
+/*******   HEADER                                       */
+/********************************************************/
+header#enTete {
+     position: absolute;
+     left: 10px;
+     top: 10px;
+
+     height: 90px; width: 99%;
+     background-color: #fff;
+
+}
+
+div#centerLogo{
+    text-align: center;
+}
+
+header#enTete img {
+    height: 80px;
+}
+
+/********************************************************/
+/*******   MENU + CONTENT                               */
+/********************************************************/
+
+div#contentHeigh {
+}
+
+/********************************************************/
+/*******   MENU                                         */
+/********************************************************/
+aside#menu{
+     font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+     font-size: medium;
+
+/*     top: 110px;*/
+     left: 10px;
+     width: 190px;
+     position: absolute;
+     background-color: white;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+aside li{
+    margin-top: 30px;
+    width: 160px;
+    background-color: #d9d9d9;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#secret{
+         font-size: xx-small;
+         text-align: right;
+         background-color: #fff;
+
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+
+}
+
+aside a:link {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+aside a:active{
+    text-decoration: none;
+    color: black;
+}
+
+/********************************************************/
+/*******   GLOBAL CONTENU : section                     */
+/********************************************************/
+
+section#contenu {
+     background-color: white;
+     /*height: 90%;*/
+     margin-top: 110px;
+     margin-left: 210px;
+     margin-right: 10px;
+     padding: 20px;
+    min-height: 400px;
+    position: relative;
+}
+
+
+/********************************************************/
+/*******   FOOTER                                       */
+/********************************************************/
+footer{
+
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    font-size: x-small;
+}
+
+
+/********************************************************/
+/*******   INTRODUCTION                                 */
+/********************************************************/
+div .intro_content{
+    text-align: center;
+
+}
+
+/********************************************************/
+/*******   PRESENTATION                                 */
+/********************************************************/
+.presentationTable{
+    background-color: #d9d9d9;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presentationTable td{
+    text-align: center;
+    background-color: #fffff3;
+    padding: 20px;
+}
+
+.presentationTable img{
+    height: 150px;
+    border-radius: 25px;
+}
+
+/********************************************************/
+/*******   FORM: ERRORS                                 */
+/********************************************************/
+ul.errorlist {
+     margin-left: 160px; padding: 0;
+     list-style-type: none;
+     color: #d23d24;
+}
+
+/********************************************************/
+/*******   FORM: Newsletter                             */
+/********************************************************/
+
+form {
+    background-color: #fffff3;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+label {
+display: inline-block;
+    width: 150px;
+    padding: 0;
+}
+input {
+    width: 150px;
+
+}
+
+input#submit{
+    margin-left: 160px;
+}
+
+/********************************************************/
+/*******   FORM: UserInfos                              */
+/********************************************************/
+
+hr{
+    border: 6px solid;
+    color: #d9d9d9;
+    border-radius: 5px;
+}
